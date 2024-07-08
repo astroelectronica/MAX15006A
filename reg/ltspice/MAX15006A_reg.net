@@ -11,13 +11,13 @@
 *
 *load regulation
 *.param VSOURCE=5
-*.param ILOAD=0.05
-*.dc I1 0 {ILOAD} 100n
+*.param ILOAD=50m
+*.dc I1 10m {ILOAD} 0.01m
 *
 *line regulation
 .param VSOURCE=14
 .param ILOAD=1m
-.dc V1 8 {VSOURCE} 100m
+.dc V1 8 {VSOURCE} 10m
 *
 .backanno
 .op
